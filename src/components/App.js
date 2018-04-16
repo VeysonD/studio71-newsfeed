@@ -1,17 +1,14 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Container } from 'semantic-ui-react';
+
 import FeedView from './Feed';
 
-class App extends Component {
-  render() {
-    return (
-      <div>
-        <Container>
-          <FeedView />
-        </Container>
-      </div>
-    );
-  }
-}
+const App = () => (
+  <div>
+    <Container>
+      <FeedView />
+    </Container>
+  </div>
+);
 
 export default App;
