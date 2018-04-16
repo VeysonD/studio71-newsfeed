@@ -4,7 +4,6 @@ import { Feed } from 'semantic-ui-react';
 const VideoItem = (props) => {
   const {
     message,
-    name,
     thumbnail,
     title,
   } = props.item;
@@ -32,7 +31,7 @@ const VideoItem = (props) => {
         <Feed.Content>
           <Feed.Summary>
             <Feed.Extra>
-              <div>{title}</div>
+              <div>Video Update: {title}</div>
             </Feed.Extra>
           </Feed.Summary>
           <Feed.Extra text>
