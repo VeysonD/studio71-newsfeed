@@ -9,7 +9,7 @@ const VideoItem = (props) => {
     title,
   } = props.item;
   const channelTitle = props.item.channel_title;
-  
+
   return (
     <Feed>
       <Feed.Event>
@@ -24,10 +24,7 @@ const VideoItem = (props) => {
         </Feed.Label>
         <Feed.Content>
           <Feed.Summary>
-            <Feed.User>{name}</Feed.User>
-            <Feed.Content>
-              <div>Channel - {channelTitle}</div>
-            </Feed.Content>
+            <Feed.User>{channelTitle}</Feed.User>
           </Feed.Summary>
         </Feed.Content>
       </Feed.Event>
@@ -35,7 +32,7 @@ const VideoItem = (props) => {
         <Feed.Content>
           <Feed.Summary>
             <Feed.Extra>
-              <div>Video - {title}</div>
+              <div>{title}</div>
             </Feed.Extra>
           </Feed.Summary>
           <Feed.Extra text>
